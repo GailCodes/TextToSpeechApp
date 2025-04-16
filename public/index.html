@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>TTS Translate App</title>
+    <title>App</title>
   </head>
   <body class="bg-gray-600 flex items-center justify-center h-screen">
     <div class="bg-gray-100 shadow-md rounded-lg p-4 max-w-md w-full">
-      <h1 class="text-2xl font-semibold text-center mb-4">TTS & Translation</h1>
+      <h1 class="text-2xl font-semibold text-center mb-4">Text-To-Speech</h1>
 
       <!-- Text Input -->
       <textarea
@@ -17,7 +17,7 @@
         placeholder="Type here..."
       ></textarea>
 
-      <!-- TTS Voices -->
+      <!-- TTS Voices Selection -->
       <div class="mt-4">
         <label for="voice-selection" class="block text-lg font-semibold"
           >Select Voice</label
@@ -25,21 +25,16 @@
         <select
           id="voice-selection"
           class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus_ring-2 focus:ring-blue-500"
-        >
-          <option value="voice-1">Voice 1</option>
-          <option value="voice-2">Voice 2</option>
-          <option value="voice-3">Voice 3</option>
-        </select>
-
-        <button
-          id="button-lay"
-          class="rounded-lg bg-blue-600 hover:bg-blue-700 text-white w-full p-2 mt-4 font-semibold"
-        >
-          Play
-        </button>
+        ></select>
       </div>
-    </div>
 
+      <button
+        id="button-play"
+        class="rounded-lg bg-blue-600 hover:bg-blue-700 text-white w-full p-2 mt-4 font-semibold"
+      >
+        Play
+      </button>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
